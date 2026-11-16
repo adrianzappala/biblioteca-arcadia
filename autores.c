@@ -242,3 +242,20 @@ void listarObrasAutor(int idAutor)
         printf("No se encontraron obras para ese autor.\n");
     }
 }
+
+
+// Devuelve el nombre de un autor segun su ID.
+char *obtenerNombreAutor(int idAutor)
+{
+    int i;
+
+    for (i = 0; i < cantidadAutores; i++)
+    {
+        if (autores[i].idAutor == idAutor)
+        {
+            return autores[i].nombre;
+        }
+    }
+
+    return "Autor desconocido";
+}

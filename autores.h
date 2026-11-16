@@ -18,4 +18,9 @@ typedef struct {
 void listarAutores(void);
 void listarObrasAutor(int idAutor);
 
+extern Obra obras[];
+extern int cantidadObras;
+
+char *obtenerNombreAutor(int idAutor);
+
 #endif
