@@ -10,7 +10,9 @@ typedef struct
     int anioPublicacion;
     int stockTotal;
     int stockDisponible;
-} Libro; Libro;
+    int descatalogado;
+} Libro;
+
 
 // Funciones del modulo de libros
 void agregarLibro(void);
@@ -25,5 +27,10 @@ void buscarLibrosPorGenero(void);
 void buscarLibrosPorAnio(void);
 void buscarLibrosPorInicial(void);
 void listarLibrosOrdenados(void);
+void mostrarHistorialBusquedas(void);
+void mostrarResumenStockAutores(void);
+void listarLibrosMemoriaDinamica(void);
+void listarLibrosRecursivo(void);
+void recomendarLibros(void);
 
 #endif
